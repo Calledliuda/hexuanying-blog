@@ -17,6 +17,8 @@ export default function BookCard({ book }: BookCardProps) {
           alt={book.title}
           className="w-full h-full object-cover pointer-events-none"
           loading="lazy"
+          referrerPolicy="no-referrer"
+          crossOrigin="anonymous"
         />
       </div>
       <h4 className="mt-3 text-sm font-medium text-ink truncate">
