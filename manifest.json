@@ -1,0 +1,16 @@
+{
+  "name": "何宣颖的博客",
+  "short_name": "何宣颖",
+  "description": "写下即永恒 —— 何宣颖的个人博客",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF9",
+  "theme_color": "#FAFAF9",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
