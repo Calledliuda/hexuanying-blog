@@ -1,0 +1,16 @@
+{
+  "name": "我的博客",
+  "short_name": "博客",
+  "description": "记录思考、阅读与旅途中的见闻",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF9",
+  "theme_color": "#FAFAF9",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
