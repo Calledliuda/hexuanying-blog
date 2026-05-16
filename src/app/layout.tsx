@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "我的博客",
-  description: "记录思考、阅读与旅途中的见闻",
+  title: "何宣颖的博客",
+  description: "写下即永恒 —— 何宣颖的个人博客",
   manifest: "/manifest.json",
   icons: { icon: "/favicon.svg" },
 };
@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="我的博客" />
+        <meta name="apple-mobile-web-app-title" content="何宣颖的博客" />
       </head>
       <body className="min-h-full">{children}</body>
     </html>

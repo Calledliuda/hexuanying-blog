@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
           <a href="#" className="text-lg font-semibold tracking-tight text-ink">
-            我的博客
+            何宣颖
           </a>
           <div className="hidden sm:flex items-center gap-8">
             {navItems.map((item) => (
@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
       <footer className="border-t border-warm-200 py-12 text-center">
         <p className="text-sm text-ink-muted">
-          &copy; {new Date().getFullYear()} &middot; Built with care
+          &copy; {new Date().getFullYear()} 何宣颖
         </p>
       </footer>
     </div>

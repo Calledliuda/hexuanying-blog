@@ -16,11 +16,11 @@ export default function HomePage() {
   return (
     <Layout>
       <HeroSection
-        name="我的博客"
-        tagline="记录思考、阅读与旅途中的见闻"
+        name="何宣颖"
+        tagline="写下即永恒"
         avatar="/avatar.jpg"
       />
-      <AboutSection bio="你好，我是一个热爱阅读、旅行和思考的人。这个博客是我与世界分享想法的地方。在这里，没有算法推荐、没有流量焦虑，只有真诚的记录。" />
+      <AboutSection bio="你好，我是何宣颖。一个热爱阅读、旅行和思考的人。这里是我的精神自留地——没有算法推荐，没有流量焦虑，只有真诚的记录和分享。" />
       <FeaturedPosts posts={posts} />
       <BookShelf books={books} />
       <Gallery />
