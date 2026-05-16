@@ -24,14 +24,12 @@ export default function HeroSection({ name, tagline, avatar }: HeroSectionProps)
             className="flex-shrink-0"
           >
             <div className="relative">
-              <div className="absolute inset-0 rounded-2xl bg-accent-lavender/15 blur-2xl scale-150" />
-              <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden ring-1 ring-warm-300/50 shadow-sm relative">
-                <img
-                  src={avatar}
-                  alt={name}
-                  className="w-full h-full object-contain"
-                />
-              </div>
+              <div className="absolute inset-0 bg-accent-lavender/12 blur-3xl scale-125" />
+              <img
+                src={avatar}
+                alt={name}
+                className="h-36 sm:h-44 w-auto relative"
+              />
             </div>
           </motion.div>
         )}
