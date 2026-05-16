@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { asset } from "@/lib/path";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 
 export const dynamic = "force-static";
@@ -21,7 +22,7 @@ export default async function PostPage({
     <div className="min-h-screen bg-warm">
       <article className="max-w-2xl mx-auto px-6 pt-32 pb-24">
         <Link
-          href="/#posts"
+          href={asset("/#posts")}
           className="inline-flex items-center gap-2 text-sm text-ink-muted hover:text-ink transition-colors mb-12"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="stroke-current">

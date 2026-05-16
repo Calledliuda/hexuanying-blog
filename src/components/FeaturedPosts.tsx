@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { asset } from "@/lib/path";
 import PostCard from "./PostCard";
 import type { Post } from "@/lib/posts";
 
@@ -29,7 +30,7 @@ export default function FeaturedPosts({ posts }: FeaturedPostsProps) {
               title={post.title}
               date={post.date}
               excerpt={post.excerpt}
-              cover={post.cover ?? "/fallback-cover.svg"}
+              cover={post.cover ? (post.cover.startsWith("http") ? post.cover : asset(post.cover)) : asset("/fallback-cover.svg")}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{

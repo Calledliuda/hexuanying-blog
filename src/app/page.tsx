@@ -1,3 +1,4 @@
+import { asset } from "@/lib/path";
 import { getAllPosts } from "@/lib/posts";
 import { getAllBooks } from "@/lib/books";
 import Layout from "@/components/Layout";
@@ -18,7 +19,7 @@ export default function HomePage() {
       <HeroSection
         name="何宣颖"
         tagline="写下即永恒"
-        avatar="/avatar.png"
+        avatar={asset("/avatar.png")}
       />
       <AboutSection bio="你好，我是何宣颖。一个热爱阅读、旅行和思考的人。这里是我的精神自留地——没有算法推荐，没有流量焦虑，只有真诚的记录和分享。" />
       <FeaturedPosts posts={posts} />

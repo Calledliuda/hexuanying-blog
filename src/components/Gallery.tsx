@@ -2,15 +2,16 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { asset } from "@/lib/path";
 
 interface GalleryProps {
   images?: string[];
 }
 
 const defaultImages = [
-  "/gallery/1.jpg",
-  "/gallery/2.jpg",
-  "/gallery/3.jpg",
+  asset("/gallery/1.jpg"),
+  asset("/gallery/2.jpg"),
+  asset("/gallery/3.jpg"),
 ];
 
 export default function Gallery({ images = defaultImages }: GalleryProps) {
